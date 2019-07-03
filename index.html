@@ -1,24 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bot</title>
+</head>
 <body>
-  Чат бот:  
-  <div id="webchat" role="main"></div>
-      <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
-      <script>
-         window.WebChat.renderWebChat(
-            {
-               directLine: window.WebChat.createDirectLine({
-                  token: 'LONKA8zha3g.Taybz2PUNPHaw3Lmnxkrbjxk4V-rOLz7TORoS1vNfgY'
-               }),
-               userID: 'YOUR_USER_ID',
-               username: 'Web Chat User',
-               locale: 'en-US',
-               botAvatarInitials: 'WC',
-               userAvatarInitials: 'WW'
-            },
-            document.getElementById('webchat')
-         );
-      </script>   
+    <section class="bot_section">
+        <div class="container">
+            <div class="bot_content">
+                <div class="bot_content_left">
+                    <div class="bot_title">
+                        <h3>
+                            Бот за вас ответит на типичные вопросы
+                            о налогах
+                        </h3>
+                    </div>
+                    <div class="example_sms">
+                        <div class="example_title">
+                            <p>
+                                Например
+                            </p>
+                        </div>
+                        <ul class="sms_list">
+                            <li>Как узнать о своих банковских счетах?</li>
+                            <li>Как определить НДФЛ по договору дарения?</li>
+                            <li>Какие документы нужны для оформления вычета на детей?</li>
+                            <li>Где получить выписку из ЕГРЮЛ или ЕГРИП?</li>
+                            <li>Где получить выписку из ЕГРЮЛ или ЕГРИП?</li>
+                        </ul>
+                        <p class="more_sms">И ещё сотни вопросов</p>
+                    </div>
+                    <div class="mob_button">
+                        <button>Открыть чат с примером</button>
+                    </div>
+                    <div class="back_call">
+                        <div class="back_call_title">
+                            <h3>
+                                Приглашаем к сотрудничству
+                            </h3>
+                        </div>
+                        <form action="" class="back_call_form">
+                            <input type="text" class="back_call_input" placeholder="Телефон или email">
+                            <button type="submit" class="back_call_button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="info_table">
+                        <table>
+                            <tr>
+                                <td class="blue">человек<br> нашли ответы</td>
+                                <td>удовлетворены</td>
+                                <td>период</td>
+                            </tr>
+                            <tr>
+                                <td class="table_nuber_blue">1 307</td>
+                                <td class="table_nuber_black">87%</td>
+                                <td>на этой <br> неделе</td>
+                            </tr>
+                            <tr>
+                                <td class="table_nuber_blue">1 100</td>
+                                <td class="table_nuber_black">85%</td>
+                                <td>на <br> прошлой</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="our_work_list">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Интегрируемся в вашу базу знаний</li>
+                            <li><i class="far fa-check-circle"></i> Бот отвечает моментально</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bot_content_right">
+                    <div class="chat_box">
+                        <img src="img/chat.png" alt="chat">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer_contant">
+                <ul class="footer_manu">
+                    <li class="footer_logo"><a href="#">ООО Квантсофт</a></li>
+                    <li class="center_mail"><a href="#">bot.support@kvantsoft.ru</a></li>
+                    <li>+7 (905) 191 24-12</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal_bot">
+        <div class="modal_content">
+            <div class="modal_header">
+                <div class="modal_title">
+                    <h3>Налоговая консультация</h3>
+                </div>
+                <div class="modal_close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="chat_box_modal">
+                <img src="img/chat.png" alt="chat">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
- 
 </html>
