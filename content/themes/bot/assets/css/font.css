@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Avenir_bold;
+    src: url('../fonts/AvenirNextCyr-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: Avenir_regular;
+    src: url('../fonts/AvenirNextCyr-Regular.ttf');
+  }

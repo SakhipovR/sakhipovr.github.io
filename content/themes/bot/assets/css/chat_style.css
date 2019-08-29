@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.webchat {
+  width: 100%;
+  min-width: 530px;
+  height: 570px;
+  box-shadow: -20px 25px 120px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px;
+  padding: 32px; }
+  @media screen and (max-width: 768px) {
+    .webchat {
+      min-width: auto;
+      height: calc(100% - 61px);
+      padding: 15px;
+      border-radius: 0;
+      box-shadow: none; } }
+  .webchat .css-14klaxb {
+    display: none; }
+  .webchat .css-gtdio3, .webchat .css-1t62idy {
+    background: #fff; }
+  .webchat .css-1m7fmeg .main {
+    border-radius: 6px;
+    min-height: 32px; }
+  .webchat .css-1m7fmeg form {
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    margin-right: 8px;
+    padding: 7px 8px; }
+    .webchat .css-1m7fmeg form > input {
+      font-family: 'Avenir_regular', sans-serif;
+      font-size: 13px; }
+  .webchat .css-115fwte {
+    width: 32px;
+    background: #0085ff;
+    border-radius: 6px; }
+    .webchat .css-115fwte:before {
+      content: "↑";
+      width: 12px;
+      height: 21px;
+      font-size: 18px;
+      color: #ffffff; }
+    .webchat .css-115fwte svg {
+      display: none; }
+  .webchat .css-o3xlyv {
+    font-family: 'Avenir_regular', sans-serif;
+    font-size: 13px;
+    padding: 8px 12px;
+    line-height: 1.23; }
+  .webchat .css-1s8geyi, .webchat .css-1ldnj55 {
+    font-family: 'Avenir_regular', sans-serif;
+    text-transform: lowercase;
+    font-size: 12px; }
+  .webchat .css-b9r2pe {
+    min-height: auto; }
+  .webchat .css-tyxksf.from-user > .content > .webchat__row {
+    flex-direction: row; }
+  .webchat .css-1qyo5rb {
+    margin-bottom: 4px; }
+    .webchat .css-1qyo5rb:last-child {
+      margin-bottom: 15px; }
+  .webchat .css-1s8geyi, .webchat .css-1ldnj55 {
+    padding-top: 1px;
+    margin-bottom: 4px; }
+
+.sms_list {
+  position: relative; }
+  .sms_list li {
+    cursor: default;
+    z-index: 1; }
+    .sms_list li span {
+      cursor: pointer; }
+      .sms_list li span:hover {
+        color: #0079e9; }
+    .sms_list li svg {
+      position: absolute;
+      z-index: -1; }
+      .sms_list li svg .arrow-path {
+        stroke-dasharray: 600;
+        display: none; }
+    .sms_list li:hover {
+      color: #474646; }
+    .sms_list li span:hover + svg .arrow-path {
+        @media screen and (min-width: 1024px) {
+      display: block;
+      stroke-dashoffset: 600;
+      animation: dash 1s linear forwards;} }
+    .sms_list li:nth-child(1) svg {
+      right: -190px;
+      top: 7px; }
+    .sms_list li:nth-child(2) svg {
+      right: -195px;
+      top: 33px; }
+    .sms_list li:nth-child(3) svg {
+      right: -210px;
+      top: 59px; }
+    .sms_list li:nth-child(4) svg {
+      right: -193px;
+      top: 85px; }
+    .sms_list li:nth-child(5) svg {
+      right: -185px;
+      top: 111px; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+.modal_content, .chat_box_modal{
+	height: 100%;
+}
+
+/*# sourceMappingURL=chat_style.css.map */
